@@ -25,11 +25,14 @@ def get_hyperbole_dots_coords():
     hyperbole = [[], []]
     right_lim = 1
     left_lim = 30
+    dot = 0.5
     k = 30
 
-    for i in range(right_lim, left_lim + 1):
-        hyperbole[0].append(i)
-        hyperbole[1].append(k / i)
+    while right_lim < left_lim:
+        hyperbole[0].append(right_lim)
+        hyperbole[1].append(k / right_lim)
+
+        right_lim += dot
 
     return hyperbole
 

@@ -17,11 +17,11 @@ def window_settings(root):
 
 
 def ui(root):
-    pic = plt.Figure(figsize=(9, 7), dpi=100)
+    pic = plt.Figure(figsize=(7, 7), dpi=100)
     pic.set_facecolor("pink")
 
     canvas = FigureCanvasTkAgg(pic, root)
-    canvas.get_tk_widget().place(x=400, y=0)
+    canvas.get_tk_widget().place(x=500, y=0)
 
     figure = pic.add_subplot(111)
 
